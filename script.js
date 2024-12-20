@@ -1,5 +1,11 @@
 document.querySelector("#calculate").addEventListener('click', calculate);
 
+window.addEventListener('keypress', e=>{
+    if(e.key == 'Enter'){
+        calculate();
+    }
+})
+
 function calculate() {
     const num1 = parseInt(document.querySelector('#number1').value);
     const num2 = parseInt(document.querySelector('#number2').value);
