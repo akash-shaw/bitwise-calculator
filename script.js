@@ -24,5 +24,5 @@ function calculate() {
     }
 
     document.querySelector('#result').textContent = result;
-    document.querySelector('#binaryResult').textContent = `Binary: ${result.toString()}`;
+    document.querySelector('#binaryResult').textContent = `Binary: ${result.toString(2)}`;
 }
